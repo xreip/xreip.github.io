@@ -32,7 +32,7 @@ body{
    display:grid;
    gap: 1rem;
    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .card{
    /* width: 95%; */
@@ -45,6 +45,42 @@ body{
    color:aliceblue;
    font-size: 2rem;
    font-family: 'Courier New', Courier, monospace;
+}
+.photo-card{
+   /* width: 95%; */
+   /* margin: 0 auto; */
+   display: grid;
+   place-content: center;
+   padding:2rem 1rem;
+   text-align: center;
+   background-color: #444049;
+   transition: all .2s ease-in-out;
+   border-radius: 5px;
+   color:aliceblue;
+   font-size: 2rem;
+   font-family: 'Courier New', Courier, monospace;
+
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   /* min-width: 250px; */
+}
+.photo-grid{
+   display:grid;
+   gap: 1rem ;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-auto-rows: 250px;
+   grid-auto-flow: dense;
+}
+.tall-wide {
+   grid-row: span 2 / auto;
+   grid-column: span 2 / auto;
+}
+.tall{
+   grid-row: span 2 / auto;
+}
+.wide{
+   grid-column: span 2 / auto;
 }
 
 .card:hover{
