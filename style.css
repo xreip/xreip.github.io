@@ -117,7 +117,7 @@ body {
    background-repeat: no-repeat;
    
 }
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
    .animated {
       height: 85vh;
       display: grid;
